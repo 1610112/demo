@@ -32,7 +32,7 @@ jobs:
       run: mvn install
       
     - name: Upload JAR file
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: my-jar-file
         path: demo/target/*.jar  # Change path if your JAR file is located elsewhere
