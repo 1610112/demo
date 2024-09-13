@@ -26,7 +26,11 @@ jobs:
     - name: Build with Maven
       working-directory: demo
       run: mvn clean package  # Change to your build command, e.g., `mvn package` or `./gradlew build` for Gradle
-
+   
+    - name: Build with Maven
+      working-directory: demo
+      run: mvn install
+      
     - name: Upload JAR file
       uses: actions/upload-artifact@v3
       with:
