@@ -32,3 +32,8 @@ jobs:
       with:
         name: my-jar-file
         path: target/*.jar  # Change path if your JAR file is located elsewhere
+        
+    - name: Verify directory structure
+      run: |
+        ls -R  # List all files and directories recursively to check structure
+        if [ ! -f demo/pom.xml ]; then echo "pom.xml not found in the demo directory"; exit 1; fi
