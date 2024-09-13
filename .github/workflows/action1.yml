@@ -35,7 +35,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: my-jar-file
-        path: target/*.jar  # Change path if your JAR file is located elsewhere
+        path: demo/target/*.jar  # Change path if your JAR file is located elsewhere
         
     - name: Verify directory structure
       run: |
